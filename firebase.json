@@ -1,0 +1,8 @@
+{
+  "firestore": {
+    "indexes": "firestore.indexes.json"
+  },
+  "projects": {
+    "default": "grocery-store-94de0"
+  }
+}
