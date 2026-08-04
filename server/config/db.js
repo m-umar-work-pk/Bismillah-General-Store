@@ -1,7 +1,11 @@
 import dns from 'dns'
 import mongoose from 'mongoose'
 
-dns.setServers(['192.168.20.1'])
+if (!process.env.VERCEL) {
+  try {
+    dns.setServers(['192.168.20.1'])
+  } catch {}
+}
 
 const connectDB = async () => {
   try {
